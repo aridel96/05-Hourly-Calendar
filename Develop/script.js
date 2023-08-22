@@ -10,17 +10,11 @@ $(document).ready(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
 
-  var nineAM = $("#hour-9").children().eq(2)                // Selects the child element with the index of 2 for the element with the id of hour-number
-  var tenAM = $("#hour-10").children().eq(2)
-  var elevenAM = $("#hour-11").children().eq(2)
-  var twelvePM = $("hour-12").children().eq(2)
-  var onePM = $("hour-1").children().eq(2)
-  var twoPM = $("hour-1").children().eq(2)
-  var threePM = $("hour-1").children().eq(2)
-  var fourPM = $("hour-1").children().eq(2)
-  var fivePM = $("hour-1").children().eq(2)
+  // AKA: Use this
+  // get hour-x id by getting parent of save button
+  // use hour-x id as key for local storage
 
-  // var save = $(".saveBtn").on("submit", saveTask);
+
 
   // $("textarea").addClass("task");
 
@@ -28,10 +22,11 @@ $(document).ready(function () {
 
 
   function addTask(goal) {
-    goal.preventDefault()
-    window.alert("submitted!")
-
-
+    goal.preventDefault();
+    let hourBlock = $(this).parent().attr('id');
+    let text = $(this).siblings().eq(1).val
+    // let sa = localStorage.set
+    console.log(hourBlock + " " + text)
 
   }
 
@@ -61,18 +56,8 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-  nineAM.on('submit', addTask);
-  tenAM.on('submit', addTask);
-  elevenAM.on('submit', addTask);
-  twelvePM.on('submit', addTask);
-  onePM.on('submit', addTask);
-  twoPM.on('submit', addTask);
-  threePM.on('submit', addTask);
-  fourPM.on('submit', addTask);
-  fivePM.on('submit', addTask);
+  var save = $(".saveBtn")
+  
+  save.on("click", addTask);
 
 });
