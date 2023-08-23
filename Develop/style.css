@@ -4,6 +4,16 @@ body {
   background-color: rgb(218, 230, 254);
 }
 
+header {
+  display: flex;
+  /* justify-content: center; */
+  flex-flow: column wrap;
+}
+
+p, h1 {
+  align-self: center;
+}
+
 textarea {
   background: transparent;
   border: none;
@@ -32,12 +42,15 @@ textarea {
 }
 
 .past {
-  background-color: #e2dfdf;
+  background-color: #e5d6f1;
+  /* ddcbe5 */
+  /* e2d7f4 */
+  /* d7beea */
   color: white;
 }
 
 .present {
-  background-color: #faff60;
+  background-color: #faff60; 
   color: white;
 }
 
