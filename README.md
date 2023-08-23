@@ -13,7 +13,7 @@ Project 5 focuses on using Third Party API's such as JQuery, Bootstrap, and DayJ
 ## Screenshot and Link
 https://aridel96.github.io/05-Hourly-Calendar/
 
-![Hourly Calendar site](image.png)
+![Hourly Calendar site](image.png))
 
 ## License
 MIT
