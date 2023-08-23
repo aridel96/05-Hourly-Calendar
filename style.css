@@ -4,6 +4,16 @@ body {
   background-color: rgb(218, 230, 254);
 }
 
+header {
+  display: flex;
+  /* justify-content: center; */
+  flex-flow: column wrap;
+}
+
+p, h1 {
+  align-self: center;
+}
+
 textarea {
   background: transparent;
   border: none;
@@ -26,23 +36,26 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #21adf8;
+  color: #ffffff;
   border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #e5d6f1;
+  /* ddcbe5 */
+  /* e2d7f4 */
+  /* d7beea */
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #faff60; 
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #88eea3;
   color: white;
 }
 
@@ -50,7 +63,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #21adf8;
   color: white;
 }
 
